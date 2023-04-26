@@ -1,3 +1,4 @@
+<app-header></app-header>
 <form action="/ViewEmployee_page">
   <div class="container">
       <h2>Edit Employee Details</h2>
@@ -17,7 +18,6 @@
           <label for="emailaddress" class="form-label">Email address:</label>
           <input type="email" class="form-control" id="emailaddress">
         </div>
-  
         <p>Choose your gender:</p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="genderM" id="genderM">
@@ -31,7 +31,6 @@
             Female
           </label>
         </div>
-  
         <p>Select a department</p>
         <select class="form-select" aria-label="Default select example">
           <option selected>Choose department</option>
@@ -39,14 +38,8 @@
           <option value="2">Finance</option>
           <option value="3">Sales</option>
         </select>
-         
-          <br> <br> <br> <br>
-      
-          <!--<button type="Submit" value="Submit" class="btn btn-primary">Update Employee</button>-->
-
+          <br>
           <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" >Update Employee</a>
-     
   </div>
 </form>
-
 <app-footer></app-footer>

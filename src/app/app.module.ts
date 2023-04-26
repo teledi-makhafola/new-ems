@@ -8,6 +8,8 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { EditemployeeComponent } from './editemployee/editemployee.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { HeaderComponent } from './header/header.component';
     EditemployeeComponent,
     FooterComponent,
     HeaderComponent,
+    ViewemployeeComponent,
+    LandingComponent,
   
   ],
   imports: [
