@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { LandingComponent } from './landing/landing.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
@@ -22,11 +24,13 @@ import { LandingComponent } from './landing/landing.component';
     HeaderComponent,
     ViewemployeeComponent,
     LandingComponent,
+    ModalComponent,
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
