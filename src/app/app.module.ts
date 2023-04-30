@@ -10,8 +10,7 @@ import { EditemployeeComponent } from './editemployee/editemployee.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
-import { LandingComponent } from './landing/landing.component';
-import { ModalComponent } from './modal/modal.component';
+
 
 
 @NgModule({
@@ -23,9 +22,6 @@ import { ModalComponent } from './modal/modal.component';
     FooterComponent,
     HeaderComponent,
     ViewemployeeComponent,
-    LandingComponent,
-    ModalComponent,
-  
   ],
   imports: [
     BrowserModule,
