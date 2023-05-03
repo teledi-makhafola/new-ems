@@ -1,5 +1,7 @@
-<br>
-<a routerLink="/add-employee" routerLinkActive="active" class="btn btn-primary" style="float:right">Add Employee</a>
+
+<app-header></app-header>
+  <br>
+  <a routerLink="/add-employee" routerLinkActive="active" class="btn btn-primary" style="float:right">Add Employee</a>
 <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -20,16 +22,10 @@
         <td>mark@gmail.com</td>
         <td>HR</td>
         <td>Active</td>
-        <td><a routerLink="/edit-employee" routerLinkActive="active" class="btn btn-primary">Edit</a>|<a routerLink="/view-employee" routerLinkActive="active" class="btn btn-primary">View</a>|<button type="button" class="btn btn-primary" (click)="confirmBox()">Delete</button></td> 
+        <td><a routerLink="/edit-employee" routerLinkActive="active" class="btn btn-primary">Edit</a>|<a routerLink="/view-employee" routerLinkActive="active" class="btn btn-primary">View</a>|<button type="button" class="btn btn-danger">Delete</button></td>
       </tr>
-
     </tbody>
   </table>
-
-
-
-
-  
-
+<app-footer></app-footer>
   
   

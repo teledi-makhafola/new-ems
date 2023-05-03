@@ -12,7 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { LandingComponent } from './landing/landing.component';
 import { ModalComponent } from './modal/modal.component';
-import { DeleteemployeeComponent } from './deleteemployee/deleteemployee.component';
 
 
 @NgModule({
@@ -26,7 +25,6 @@ import { DeleteemployeeComponent } from './deleteemployee/deleteemployee.compone
     ViewemployeeComponent,
     LandingComponent,
     ModalComponent,
-    DeleteemployeeComponent,
   
   ],
   imports: [
