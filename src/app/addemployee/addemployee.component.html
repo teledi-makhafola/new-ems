@@ -1,3 +1,4 @@
+<app-header></app-header>
 
  <div class="form-body">
     <div class="row">
@@ -27,38 +28,43 @@
                         </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="text" name="name" placeholder="Contact Number" required>
+                            <input class="form-control" type="number" name="number" placeholder="Employee Number" required>
                          </div>
 
                        <div class="col-md-12">
                             <select class="form-select mt-3" required>
-                                  <option selected disabled value="">Department</option>
-                                  <option value="jweb">IT</option>
-                                  <option value="sweb">HR</option>
-                                  <option value="pmanager">Finance</option>
+                                  <option selected disabled value="">Position</option>
+                                  <option value="jweb">Junior Web Developer</option>
+                                  <option value="sweb">Senior Web Developer</option>
+                                  <option value="pmanager">Project Manager</option>
                            </select>
                             <div class="valid-feedback">You selected a position!</div>
                             <div class="invalid-feedback">Please select a position!</div>
                        </div>
 
                        <div class="col-md-12 mt-3">
-                        <div class="col-md-12 mt-3">
-                            <label class="mb-3 mr-1" for="gender">Gender: </label>
-                            &nbsp;
-                            <input type="radio" name = "gender" value="male">&nbsp;Male
-                            &nbsp;
-                            <input type="radio" name = "gender" value="female">&nbsp;Female 
-                            </div>
+                        <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                        <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                        <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
 
                            <div class="valid-feedback mv-up">You selected a gender!</div>
                             <div class="invalid-feedback mv-up">Please select a gender!</div>
                         </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label">I confirm that all data are correct</label>
+                        <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                     </div>
+              
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button" (click)="simpleAlert()">Add New</button>
+                            <button (click)="onSubmit()" class="btn btn-primary me-md-2" type="button">Add</button>
                             <button id="cancel" routerLink="/home" routerLinkActive="active" class="btn btn-primary" type="button">Cancel</button>
                         </div>
-                        
-                    
                     </form>
                 </div>
             </div>
@@ -66,3 +72,4 @@
     </div>
 </div>
 
+<app-footer></app-footer>

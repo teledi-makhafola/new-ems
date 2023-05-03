@@ -1,46 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
+import { EmployeeService } from '../employee.service';
+import { Employee } from '../interface/employee';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-onDeleteEmployee() {
-throw new Error('Method not implemented.');
-}
-  
-  constructor(private router:Router) { }
+  employees: Employee[] = [];
 
-  ngOnInit() { }
+  constructor(private service: EmployeeService) {}
 
-  confirmBox(){
-    Swal.fire({
-      title: 'Are you sure want to remove?',
-      text: 'You will not be able to recover this file!',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonText: 'Yes, delete it!',
-      cancelButtonText: 'No, keep it'
-    }).then((result) => {
-      if (result.value) {
-        Swal.fire(
-          'Deleted!',
-          'Your imaginary file has been deleted.',
-          'success'
-        )
-      } else if (result.dismiss === Swal.DismissReason.cancel) {
-        Swal.fire(
-          'Cancelled',
-          'Your imaginary file is safe :)',
-          'error'
-        )
-      }
-    })
+  ngOnInit(): void {
+    this.getEmp();
   }
-    
+  getEmp() {
+    this.service.getEmployeeList().subscribe((service: any) => {
+      console.log(service);
+      this.employees = service;
+    });
+  }
 }
-
 
