@@ -1,4 +1,5 @@
 import { Component , OnInit} from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-addemployee',
@@ -6,8 +7,12 @@ import { Component , OnInit} from '@angular/core';
   styleUrls: ['./addemployee.component.css']
 })
 export class AddemployeeComponent {
+
   constructor() { }
   ngOnInit(): void {
 }
+  simpleAlert(){
+    Swal.fire('Successfully Added!');
 
+}
 }
