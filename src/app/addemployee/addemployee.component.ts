@@ -3,7 +3,6 @@ import { Component , OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { EmployeeService } from '../employee.service';
 
-
 @Component({
   selector: 'app-addemployee',
   templateUrl: './addemployee.component.html',
@@ -16,7 +15,6 @@ export class AddemployeeComponent {
   ngOnInit(): void {
     this.saveEmployee();
   }
-
   saveEmployee(){
     this.employeeService.addEmployee(this.employee).subscribe( data =>{
       console.log(data);
