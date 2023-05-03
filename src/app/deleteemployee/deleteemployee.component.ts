@@ -1,20 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
-})
-export class HomeComponent implements OnInit {
-onDeleteEmployee() {
-throw new Error('Method not implemented.');
-}
-  
-  constructor(private router:Router) { }
 
-  ngOnInit() { }
+@Component({
+  selector: 'app-deleteemployee',
+  templateUrl: './deleteemployee.component.html',
+  styleUrls: ['./deleteemployee.component.css']
+})
+export class DeleteemployeeComponent {
+
+  constructor() { }
+  ngOnInit(): void {
+}
 
   confirmBox(){
     Swal.fire({
@@ -40,7 +38,5 @@ throw new Error('Method not implemented.');
       }
     })
   }
-    
+
 }
-
-
