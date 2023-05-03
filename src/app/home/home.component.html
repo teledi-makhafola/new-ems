@@ -10,20 +10,23 @@
         <th scope="col">Surname</th>
         <th scope="col">Email</th>
         <th scope="col">Department</th>
-        <th scope="col">Status</th>
+        <th scope="col">Contact Number</th>
+        <th scope="col">Gender</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>mark@gmail.com</td>
-        <td>HR</td>
-        <td>Active</td>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.lastName}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.department}}</td>
+        <td>{{employee.contactNo}}</td>
+        <td>{{employee.gender}}</td>
         <td><a routerLink="/edit-employee" routerLinkActive="active" class="btn btn-primary">Edit</a>|<a routerLink="/view-employee" routerLinkActive="active" class="btn btn-primary">View</a>|<button type="button" class="btn btn-danger">Delete</button></td>
       </tr>
+      
     </tbody>
   </table>
 <app-footer></app-footer>

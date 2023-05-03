@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { LandingComponent } from './landing/landing.component';
 import { ModalComponent } from './modal/modal.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ModalComponent } from './modal/modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
  
   ],
   providers: [],
